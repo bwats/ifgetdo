@@ -77,4 +77,8 @@ Ifgetdo::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  #req for Heroku / Devise
+  #note to set this to your actual host
+  config.action_mailer.default_url_options = { :host => 'ifgetdo.herokuapp.com' }
 end
